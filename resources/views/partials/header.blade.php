@@ -1,16 +1,16 @@
 @php
 
     $navItems = [
-        'CHARACTERS',
-        'COMICS',
-        'MOVIES',
-        'TV',
-        'GAMES',
-        'COLLECTIBLES',
-        'VIDEOS',
-        'FANS',
-        'NEWS',
-        'SHOP'
+        'CHARACTERS' => 'characters',
+        'COMICS' => 'comics',
+        'MOVIES' => 'movies',
+        'TV' => 'tv',
+        'GAMES' => 'games',
+        'COLLECTIBLES' => 'collectibles',
+        'VIDEOS' => 'videos',
+        'FANS' => 'fans',
+        'NEWS' => 'news',
+        'SHOP' => 'shop'
     ]
 @endphp
 
@@ -22,13 +22,15 @@
     </div>
 </header>
 <nav>
-    <img src="{{ asset('images/dc-logo.png') }}" alt="">
+    <img src="{{ asset('images/dc-logo.png') }}" alt="" href="/home">
     <ul class="nav-ul">
-        @foreach($navItems as $key)
+        @foreach($navItems as $key => $value)
         <li>
-            {{$key}}
+            <a href="{{$value}}">{{$key}}</a>
         </li> 
         @endforeach
     </ul>
-    <input type="text" placeholder="Search">
+    <div class="search">
+        <input type="text" placeholder="Search">
+    </div>
 </nav>
