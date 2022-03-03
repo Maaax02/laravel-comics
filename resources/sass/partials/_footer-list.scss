@@ -1,0 +1,42 @@
+.container{
+    height: 440px;
+    background: url("/images/footer-bg.jpg");
+    display: flex;
+
+    .left{
+        width: 600px;
+        height: 400px;
+        display: flex;
+        padding-top: 30px;
+        margin-left: 180px;
+        flex-wrap: wrap;
+
+        .inner{
+            margin-left: 45px;
+        }
+
+        h2{
+            color: #fff;
+        }
+
+        ul{
+            list-style: none;
+            padding-top: 14px;
+
+            li{
+                padding-top: 6px;
+                color: rgb(126, 126, 126);
+            }
+        }
+
+        .inner-shop{
+            margin-top: 20px;
+        }
+    }
+
+    .right{
+        width: 600px;
+        margin-left: 260px;
+        background: url("/images/dc-logo-bg.png") no-repeat;
+    }
+}

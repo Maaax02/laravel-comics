@@ -1,0 +1,23 @@
+.jumbotron{
+    height: 400px;
+    background: url("/images/jumbotron.jpg");
+    background-size: cover;
+}
+
+.series{
+    background-color: #0376F2;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 380px;
+    left: 250px;
+    cursor: pointer;
+}
+
+main{
+    color: red;
+    background-color: red;
+}
