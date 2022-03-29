@@ -22,3 +22,18 @@
 @endsection
 
 
+{{-- {{route(prodotto.details), $loop -> index}} --}}
+
+ {{--
+    
+
+    in terminale: php artisan make:model 'nome' (Product) Pascal caase
+
+    modificare nel file .env il database -> riavviare il server
+    
+    nel controller creare una variabile con dentro il model
+    eseguire una funzione:  $data = Product::all();
+                            (dump and die) = dd($data)
+    --}}
+
+

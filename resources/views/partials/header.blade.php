@@ -22,7 +22,9 @@
     </div>
 </header>
 <nav>
-    <img src="{{ asset('images/dc-logo.png') }}" alt="" href="/home">
+    <a href="/">
+        <img src="{{ asset('images/dc-logo.png') }}" alt="">
+    </a>
     <ul class="nav-ul">
         @foreach($navItems as $key => $value)
         <li>
